@@ -1,8 +1,19 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: linear-gradient(120deg, #ff7e5f, #feb47b);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+    transition: background 0.5s;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 header {
@@ -12,15 +23,7 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 0.5em 0 0;
-}
-
+/* About, Experience, Projects Styling */
 .container {
     width: 80%;
     margin: auto;
@@ -28,27 +31,47 @@ header p {
     padding: 1em 0;
 }
 
-#about, #projects, #contact {
-    padding: 2em 0;
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-#projects .project {
-    margin: 1em 0;
+.project {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 1em;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#projects img {
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.project img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
+    display: none;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+.project:hover img {
+    display: block;
+}
+
+/* Experience Section */
+#experience .experience {
+    background: #fff;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 8px;
+}
+
+/* Contact Section Styling */
+#contact .linkedin-block {
     margin-top: 1em;
-}
-
-footer p {
-    margin: 0;
 }
