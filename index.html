@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranav Naik - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Pranav Naik</h1>
-            <p>Robotics / Data Science Enthusiast</p>
+            <p>Robotics and Artificial Intelligence Enthusiast</p>
         </div>
     </header>
+
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
     <section id="about">
         <div class="container">
@@ -29,11 +40,26 @@
             <h2>Experience</h2>
             <div class="experience">
                 <h3>Data Science Engineer, Reliance Jio</h3>
-                <p>Worked on data analytics, device recognition, and anomaly detection in complex IoT environments.</p>
+                <div class="job-content">
+                    <p>June 2022 – May 2024</p>
+                    <p>Edge Analytics: Trained, converted, quantized, and deployed models on edge camera hardware chip-sets (Nvidia, Amlogic, Ingenic). Modified chipset pipelines to handle custom quantized models, achieving minimal accuracy loss (10%) for doorbell and indoor edge cameras. Implemented object detection models on Asrock CPUs using OpenVINO INT8 and INT16 quantization, reducing GPU usage and saving costs.</p>
+                    <p>Smart facility management deployment: Deployed object detection and tracking solution on 500 cameras, managed by 5(scalable) Nvidia V100 GPU servers and a database server, ensuring seamless data processing and sanitation compliance reporting.</p>
+                    <p>Automated user data analysis for smart device pattern detection: Deployed device classification and recommendation models with 95% accuracy, creating a seamless pipeline from data retrieval to user recommendations on the app in associating with multiple teams.</p>
+                </div>
             </div>
             <div class="experience">
                 <h3>Graduate Engineer, Reliance Jio</h3>
-                <p>Focused on the development of analytical tools for automation and enhanced machine learning workflows.</p>
+                <div class="job-content">
+                    <p>June 2021 – May 2022</p>
+                    <p>Automatic License Plate Recognition (ALPR): Developed ALPR system with 94% recognition accuracy using YOLOv4, Pytesseract, and PaddleOCR. Enhanced image processing techniques using OpenCV and ISR. Scrapped and created datasets of around 300,000 images maintained with accurate labeling.</p>
+                </div>
+            </div>
+            <div class="experience">
+                <h3>Student Intern, CSIR - National Institute of Oceanography Goa</h3>
+                <div class="job-content">
+                    <p>May 2019 – July 2019</p>
+                    <p>AI-based Eyeball Tracking: AI-based segmentation feature and movement detection techniques for eyeball tracking.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -41,25 +67,27 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <div class="project" tabindex="0">
-                <h3>Low Cost Bionic Robotic Prosthetic Arm (Handler-1)</h3>
-                <p>3D designed, printed, assembled electronics, and programmed a bionic prosthetic arm with a patent filed.</p>
-                <img src="images/Handler_1.jpg" alt="Handler-1 Project Image">
-            </div>
-            <div class="project" tabindex="0">
-                <h3>AI-based Technique for Feature and Movement Detection (NIO)</h3>
-                <p>Enhanced an open-source AI semantic segmentation model for eye tracking.</p>
-                <img src="images/dummy-image.jpg" alt="AI Project Image">
-            </div>
-            <div class="project" tabindex="0">
-                <h3>GCS and MAVLink Communication for AUVs</h3>
-                <p>Developed a system for decrypting MAVLink data for AUV navigation.</p>
-                <img src="images/dummy-image.jpg" alt="AUV Project Image">
-            </div>
-            <div class="project" tabindex="0">
-                <h3>Survey and Rescue Drone, UR5 Robotic Arm Simulation</h3>
-                <p>Implemented live drone and UR5 arm simulation using ROS, Python, and MQTT protocols.</p>
-                <img src="images/dummy-image.jpg" alt="Drone Project Image">
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Low Cost Bionic Robotic Prosthetic Arm (Handler-1)</h3>
+                    <p>Designed, printed, and programmed a bionic prosthetic arm, with a patent filed.</p>
+                    <img src="images/Handler_1.jpg" alt="Handler-1 Project Image">
+                </div>
+                <div class="project">
+                    <h3>AI-based Eye Tracking Technique</h3>
+                    <p>Modified AI semantic segmentation models for precise eye tracking.</p>
+                    <img src="images/dummy-image.jpg" alt="AI Project Image">
+                </div>
+                <div class="project">
+                    <h3>GCS and MAVLink Communication for AUVs</h3>
+                    <p>Decrypted MAVLink data for AUV navigation.</p>
+                    <img src="images/dummy-image.jpg" alt="AUV Project Image">
+                </div>
+                <div class="project">
+                    <h3>Survey and Rescue Drone, UR5 Robotic Arm Simulation</h3>
+                    <p>Implemented live drone and UR5 arm simulation using ROS, Python, and MQTT protocols.</p>
+                    <img src="images/dummy-image.jpg" alt="Drone Project Image">
+                </div>
             </div>
         </div>
     </section>
@@ -68,8 +96,10 @@
         <div class="container">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:pranavnaik59@gmail.com">pranavnaik59@gmail.com</a></p>
+            <p>Phone: +44 7721950517 / +91 9552399948</p>
+            <p>Location: Bristol, United Kingdom</p>
             <div class="linkedin-block">
-                <script type="IN/FollowCompany" data-id="1337" data-counter="top"></script>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="pranav-naik-a49b081a7" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/pranav-naik-a49b081a7?trk=profile-badge">Pranav Naik</a></div>
             </div>
         </div>
     </section>
@@ -79,10 +109,5 @@
             <p>&copy; 2024 Pranav Naik. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- LinkedIn API Script -->
-    <script type="text/javascript" src="https://platform.linkedin.com/in.js">
-        api_key: YOUR_API_KEY
-    </script>
 </body>
 </html>
