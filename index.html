@@ -114,5 +114,26 @@
             <p>&copy; 2024 Pranav Naik. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Array of image URLs
+        const images = [
+            'images/Me_presenting1.png',
+            'images/Me_presenting2.png',
+            'images/Me_presenting3.png',
+            'images/Me_presenting4.png'
+        ];
+    
+        let currentIndex = 0;
+    
+        function changeBackgroundImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.querySelector('header').style.backgroundImage = `url('${images[currentIndex]}')`;
+        }
+    
+        // Change background image every second
+        setInterval(changeBackgroundImage, 100);
+    </script>
+    
 </body>
 </html>

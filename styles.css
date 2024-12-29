@@ -8,7 +8,7 @@ body {
 
 header {
     background: 
-        url('images/Me_presenting.png') no-repeat center center; /* Background image */
+        url('images/Me_presenting1.png') no-repeat center center; /* Initial background image */
     background-size: cover; /* Make the image cover the entire header */
     background-blend-mode: overlay; /* Blend the background color with the image */
     background-color: rgba(0, 90, 141, 0.7); /* Blueish color with transparency */
