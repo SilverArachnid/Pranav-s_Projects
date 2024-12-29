@@ -17,10 +17,13 @@ header {
     text-align: center;
 }
 
-
 nav {
     background: #003f5c;
     padding: 1em 0;
+}
+
+.centered-title {
+    text-align: center;
 }
 
 nav .container {
@@ -126,6 +129,61 @@ footer {
     padding: 1em 0;
 }
 
+/* Styles for the About Me section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+/* Profile picture styling */
+.profile-picture {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    border: 5px solid #005a8d; /* Adjust border color if needed */
+}
+
+/* About content styling */
+.about-content {
+    flex: 1;
+    padding: 0 2em;
+}
+
+.about-content h2 {
+    margin-top: 0;
+}
+
+.about-content p {
+    margin: 0;
+}
+
+/* LinkedIn block styling */
+.linkedin-block {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin-block .LI-profile-badge {
+    margin: 0;
+}
+
+/* Ensure the container for the LinkedIn badge has space to expand */
+#about .linkedin-block {
+    margin-top: 0;
+    text-align: center;
+}
+
 @media screen and (max-width: 600px) {
     nav .container {
         flex-direction: column;
@@ -134,5 +192,19 @@ footer {
 
     nav a {
         margin: 0.5em 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        padding: 2em 0;
+    }
+
+    .profile-picture, .linkedin-block {
+        flex: none;
+        margin: 1em 0;
     }
 }
